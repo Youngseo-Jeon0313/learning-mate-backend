@@ -26,7 +26,7 @@
 
 1. **chatGPT 및 whisper API 는 응답 시간이 불규칙하고, 무한 대기하는 현상이 발생할 수 있어 서버 부담이 증가합니다.**
 
- : ChatGPT와 whisper API 특성 상 응답 시간이 불규칙적이고, API 반환 오류가 생길 수 있습니다. 따라서 @Async 어노테이션을 사용하여 polling 기법으로 api 반환 하도록 구현하였습니다. 
+ : ChatGPT와 whisper API 특성 상 응답 시간이 불규칙적이고, API 반환 오류가 생길 수 있습니다. 따라서 @Async 어노테이션을 사용하여 polling 기법으로 api 반환 하도록 구현하였습니다. client와 서버 간 통신은 기본적으로 HTTP 통신이기 때문에 polling 방식을 사용하게 되면 웹브라우저와 서버 간 통신을 한 번 끊어줄 수 있어 비교적 stateless한 환경을 만들어줄 수 있다는 장점이 있습니다.
 
 FE에서 특정 간격으로 API 호출이 오면 해당 dto에 success와 fail로 반환하는 방식입니다. FE상에서는 정해진 시간이 지나면 timeout 됩니다.
 
