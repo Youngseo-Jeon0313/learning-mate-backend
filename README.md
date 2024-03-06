@@ -3,12 +3,12 @@
 ## 💡 프로젝트 내용
 
 
-**📢 프로젝트 배경**
+**프로젝트 배경**
 
 - 피라미드 기억 이론에 따르면 학습 내용에 대해 스스로 강의를 하게 되면 24시간 후에도 90%의 내용을 기억할 수 있습니다. 이 이론에 의거하여, 학습하는 내용을 앱에게 강의하는 과정에서 학습의 이해도와 장기 기억력을 높일 수 있습니다.
 - 자신이 이해한 내용과 설명하는 방법에 대한 구체적인 피드백을 받아보는 것을 목표로, Whisper API를 활용하여 실시간으로 녹음해보고, ChatGPT에게 점수를 부여받고 부연 설명을 들을 수 있습니다.
 
-**🏃프로젝트 목표**
+**프로젝트 목표**
 
 - 기기 자동 로그인 구현
 - CI/CD 구축
@@ -16,7 +16,7 @@
 - 메인 페이지 / 유저 페이지 / 랭킹 페이지 로 구성하여 앱 출시
 - 작게나마 수익화에 도전
 
-**🍀프로젝트 성과 및 의의**
+**프로젝트 성과 및 의의**
 
 - 서비스 출시 후 실제 사용자의 피드백을 받아보면서, 기획할 때는 보이지 않았던 불편함을 알게 되었고 일부 빠르게 개선하였습니다. **사용자의 피드백을 받아 프로덕트를 개선하는 경험**을 통해 성장할 수 있었습니다.
 - **서버 부하 최소화와, 보안 처리** 등 아키텍처 개선 경험을 가지게 된 프로젝트였습니다.
@@ -34,9 +34,7 @@ FE에서 특정 간격으로 API 호출이 오면 해당 dto에 success와 fail�
 
 2. **yml 파일에 환경변수 노출 오류**
 
-yml 파일에 기입된 환경변수들은 본래 github action 환경변수 로 기입하였으나 이는 도커 이미지 노출 가능성이 있어 좋지 않은 설계 방법입니다. 따라서 env 외부 주입을 통해 보안을 강화하였습니다.
-
-([블로그 글](https://youngseo-computerblog.tistory.com/80))
+yml 파일에 기입된 환경변수들은 본래 github action 환경변수 로 기입하였으나 이는 도커 이미지 노출 가능성이 있어 좋지 않은 설계 방법입니다. 따라서 env 외부 주입을 통해 보안을 강화하였습니다. ([블로그 글](https://youngseo-computerblog.tistory.com/80))
 
 추가로 개발환경에서도 잘못해 commit이 일어나 환경변수가 노출되는 현상을 막기 위해, Intellij 상에 환경변수를 할당하는 방법을 팀원간 공유하였습니다.
 
@@ -67,6 +65,7 @@ Spring security를 이용한 자동 로그인을 구현하였습니다. 최초 �
 
 이후 모니터링 툴을 사용하여 고객서비스를 신속하게 해결할 수 있었습니다.
 
+<img src="https://github.com/Youngseo-Jeon0313/learning-mate-backend/assets/81344634/81339768-ab64-4347-9c0c-901decb8dbb9" width="730">
 
 
 - Sentry 연동 커밋 : https://github.com/sanhak-chatgpt/learning-mate-backend/commit/0676a8969faea8114583cbb9515b844f00e5d4a7
@@ -88,11 +87,11 @@ IAM 키를 환경 변수로 설정하면 이 문제를 해결할 수 있지만, 
 
 
 ### 프로젝트 아키텍처
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/989a5d80-a9b6-47ac-a1d1-002f772ba7ca/Untitled.png)
+<img src="https://github.com/Youngseo-Jeon0313/learning-mate-backend/assets/81344634/f41cec3d-2c4d-41bc-83d7-0990be70f592" width="730">
+
 
 ### CD 파이프라인 아키텍처
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9d9b279f-4588-42d8-9942-a641103dda59/Untitled.png)
+<img src="https://github.com/Youngseo-Jeon0313/learning-mate-backend/assets/81344634/12b098f4-005a-4cf7-951a-ff97e968105e" width="730">
 
 ## GIT 링크
 
